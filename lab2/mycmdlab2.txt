@@ -1,0 +1,405 @@
+    1  bash
+    2  pwd
+    3  cd ../
+    4  pwd
+    5  ls
+    6  mkdir lab1
+    7  ls
+    8  mv Downloads/sample_input1.txt lab1
+    9  ls
+   10  cd lab1
+   11  ls
+   12  mv sample_input1.txt Lab1
+   13  ls
+   14  cd Lab1
+   15  ls
+   16  cd ../
+   17  cd Downloads
+   18  ls
+   19  cd ../
+   20  mv Downloads/sample_input2.txt Lab1
+   21  ls
+   22  mv Labi sample_input2.txt
+   23  mv Lab1 sample_input2.txt
+   24  ls
+   25  mv sample_input2.txt lab1
+   26  cd lab1
+   27  mv sample_input2.txt Lab1
+   28  cd Lab1
+   29  ls
+   30  grep -w "the" sample_input1.txt
+   31  grep -w "To" sample_input1.txt
+   32  grep -w "*[AB]" sample_input1.txt
+   33  grep -w "^[AB]" sample_input1.txt
+   34  grep -x "*[AB]" sample_input1.txt
+   35  grep -x "[AB]" sample_input1.txt
+   36  grep  "[AB]" sample_input1.txt
+   37  grep  "^[AB]" sample_input1.txt
+   38  grep  "$e" sample_input1.txt
+   39  grep -x "e" sample_input1.txt
+   40  grep -x "^e" sample_input1.txt
+   41  grep -x "*e$" sample_input1.txt
+   42  grep -E 'exy$\'  sample_input1.txt
+   43  grep -E 'exy$/'  sample_input1.txt
+   44  grep -E 'exy$'  sample_input1.txt
+   45  grep -w -n "by" sample_input1.txt
+   46  grep  -n "by" sample_input1.txt
+   47  grep  -v  "^T" sample_input1.txt
+   48  grep -c  "the" sample_input1.txt
+   49  grep -w  "the" sample_input1.txt | wc
+   50  wc --help
+   51  grep -w  "the" sample_input1.txt | wc -w
+   52  grep -v  "u" sample_input1.txt | wc -m
+   53  cat sample_input2.txt
+   54  sed 's/li/love/g' sample_input2.txt
+   55  sed -i 's/\li\/love/g' sample_input2.txt
+   56  sed -i 's/\li\li/love/g' sample_input2.txt
+   57  sed -i 's/li/love/g' sample_input2.txt
+   58  sed  's/li/love/g' sample_input2.txt
+   59  sed  's/li[^]/love/g' sample_input2.txt
+   60  sed  's/^li[^]*/love/g' sample_input2.txt
+   61  sed 's/^li[^]*/love/g' sample_input2.txt
+   62  sed 's/^li[^ ]*/love/g" sample_input2,txt
+   63  sed 's/^li[^ ]*/love/g" sample_input2.txt
+   64  sed 's/^li[^ ]*/love/g' sample_input2.txt
+   65  sed --help
+   66  sed 's/^li/love/g' sample_input2.txt
+   67  sed 's/^li[^ ]/love/g' sample_input2.txt 
+   68  sed 's/^li[]/love/g' sample_input2.txt 
+   69  sed 's/like/love/g' sample_input2.txt
+   70  cat sample_input2.txt
+   71  sed 's/loveke/love/g' sample_input2.txt
+   72  sed 's/li[a-z]/love/g' sample_input2.txt
+   73  sed 's/loveke/like/g' sample_input2.txt
+   74  cat sample_input2.txt
+   75  sed 's/loveke/like/g' sample_input2.txt 
+   76  sed 's/loveke/like/g' sample_input2.txt >sample_input2.txt
+   77  cat sample_input2.txt
+   78  sed 's/li[a-z]/like/g' sample_input2.txt >sample_input2.txt
+   79  cat sample_input2.txt
+   80  sed 's/li[a-z]/like/g' sample_input2.txt 
+   81  cat sample_input2.txt
+   82  sed 's/li[a-z]/love/g' sample_input2.txt 
+   83  cat sample_input2.txt
+   84  sed 's/li[a-z]/love/g' sample_input2.txt 
+   85  sed 's/li^[a-z]/love/g' sample_input2.txt 
+   86  sed 's/li[a-z]/love/g' sample_input2.txt 
+   87  sed 's/li*[a-z]/love/g' sample_input2.txt 
+   88  sed 's/li[^a-z]/love/g' sample_input2.txt 
+   89  sed 's/li[*a-z]/love/g' sample_input2.txt 
+   90  sed 's/^li[^a-z]/love/g' sample_input2.txt 
+   91  sed 's/li[a-z]*/love/g' sample_input2.txt 
+   92  sed 's/[a-z]*ing/swimming/g' sample_input2.txt 
+   93  sed 's/[a-z]*ing/swimming/g' sample_input2.txt |  >>sample_input3.txt
+   94  ls
+   95  cat sample_input3.txt
+   96  rm sample_input3.txt
+   97  ls
+   98  sed 's/li[a-z]*/love/g' sample_input2.txt >ouput1.txt
+   99  cat output1.txt
+  100  cat ouput1.txt
+  101  sed 's/[a-z]*ing/swimming/g' sample_input2.txt >>ouput1.txt
+  102  cat ouput1.txt
+  103  sed 's/vim/emacs/g' sample_input2.txt 
+  104  sed 's/vim/emacs/g' sample_input2.txt | grep -w "emacs"
+  105  sed -i 's/li[a-z]*/love/g' sample_input2.txt 
+  106  cat sample_input2.txt
+  107  sed -i 's/[a-z]*ing/swimming/g' sample_input2.txt 
+  108  sed -i 's/vim/emacs/g' sample_input2.txt
+  109  cat sample_input2.txt
+  110  head -n 10 sample_input1.txt
+  111  head -n 10 sample_input2.txt
+  112  tail -n 10 sample_input2.txt
+  113  head -n 5  sample_input2.txt | tail -n 1
+  114  grep -w "emacs" | head -n 3
+  115  grep -w "emacs" sample_input2.txt | head -n 3
+  116  find -mmin 30
+  117  cd ../
+  118  find -mmin 30
+  119  find --help
+  120  man find
+  121  find . -mmin 30 -type f
+  122  cd ../
+  123  find . -mmin 30 -type f
+  124  find . -mmin 30 
+  125  find . -m
+  126  find . -name "*a"
+  127  find . -name "^a"
+  128  find . -name "*a" -type d
+  129  cd lab1
+  130  find . -name "*a" -type d
+  131  find . -name "^a" -type d
+  132  find . -name "^a*" -type d
+  133  find . -name "a*" -type d
+  134  find . -name "a*" -type [df]
+  135  find . -name "a*" -type {df}
+  136  find . -name "a*" -type f
+  137  find . -mmin 30
+  138  home
+  139  cd ../
+  140  find . -mmin 30
+  141  find . -mmin -n 30
+  142  find .  -n 30
+  143  cd lab1
+  144  find . -type f -mmin 30
+  145  find . -type f -mmin -30
+  146  find . -type f -size +0k -size +50k
+  147  find . -type f -size +0k -size -50k
+  148  history | grep -w "grep" >mygrepcmd.txt
+  149  ls
+  150  cat mygrepcmd.txt 
+  151  history | grep -w 'find' | wc -x
+  152  history | grep -w 'find' | wc -w
+  153  history | grep -w 'find' | wc -l
+  154  history | grep -w 'find' 
+  155  history | grep -w '^find' 
+  156  history | grep -w 'find^' 
+  157  history | grep -w '^find' 
+  158  history | grep -x 'find' 
+  159  history | grep -x '*
+  160  history | grep -x '*find'
+  161  history | grep -w '^find'
+  162  history | grep -w 'find'
+  163  history | grep -l 'find'
+  164  history | grep -l '^find'
+  165  history | grep -l 'find'
+  166  history | grep -l '^find'
+  167  man grep
+  168  history | grep -w 'find'
+  169  history | grep -w ^'find'
+  170  history | grep -w "^find"
+  171  history | grep -w "find"
+  172  history | grep -w "find^"
+  173  history | grep -w "/^find"
+  174  history | grep  "^find"
+  175  history | grep  ^find
+  176  history | grep -x "^find"
+  177  history | grep -x "*"
+  178  history | grep -w "*"
+  179  history | grep -w "find'
+  180  history | grep -i "find'
+  181  history | grep -i "find"
+  182  history | grep -x "^find"
+  183  history | grep -x ^[find]
+  184  history | grep -x "^[find]"
+  185  bash
+  186  sudo bash
+  187  ls
+  188  cd lab1
+  189  mkdir a
+  190  mkdir ab; abc1; dir1; dir2
+  191  ls
+  192  mkdir abc1 ; dir 1
+  193  ls
+  194  mkdir dir[12]
+  195  ls
+  196  rm dir[12]
+  197  rm 'dir[12]'
+  198  ls
+  199  mkdir dir1
+  200  ls
+  201  rm dir1
+  202  man rm
+  203  rm dir1
+  204  rm dir1 type:d
+  205  mkdir lab1/dir2 lab1/dir3 lab1
+  206  mkdir dir2/dir3
+  207  mkdir dir2
+  208  ls
+  209  ls -l
+  210  ls -h
+  211  ls -r
+  212  ls -lh
+  213  ls
+  214  mkdir {a,ab,abc1,dir1,dir2}
+  215  ls
+  216  cd a
+  217  touch a.txt
+  218  cd ../
+  219  cd ab
+  220  touch ab.txt
+  221  cd ../
+  222  cd abc1
+  223  touch abc.txt
+  224  cd ../
+  225  cd dir1
+  226  touch dir1.txt
+  227  cd ../
+  228  cd dir2; touch dir2.txt
+  229  ls
+  230  cd ../
+  231  man ls
+  232  ls --help
+  233  ls -t
+  234  ls -d
+  235  ls
+  236  ls -L
+  237  ls tree
+  238  tree
+  239  ls -*
+  240  ls man
+  241  man ls
+  242  ls -c
+  243  ls -lh
+  244  ls --help
+  245  ls -u
+  246  ls -1
+  247  ls -d
+  248  ls-U
+  249  ls -U
+  250  ls
+  251  ls -R
+  252  ls -r
+  253  echo "Hi i like to work with shell.It is a good way of practising basic,Thank you" >a/a,txt
+  254  ls -R
+  255  echo "Hi i like to work with shell.It is a good way of practising basic,Thank you" >a/a.txt
+  256  ls
+  257  echo "Hi i like to work with shell.It is a good way of practising basic,Thank you" >ab/ab.txt
+  258  echo "Hi i like to work with shell.It is a good way of practising basic,Thank you" >abc1/abc1.txt
+  259  echo "Hi i like to work with shell.It is a good way of practising basic,Thank you" >dir1/dir1.txt
+  260  echo "Hi i like to work with shell.It is a good way of practising basic,Thank you" >dir2/dir2.txt
+  261  ls
+  262  cat {a/a.txt,ab/ab.txt,acb1/abc1.txt,dir1/dir1.txt,dir2/dir2.txt}
+  263  cat {a/a.txt,ab/ab.txt,abc1/abc1.txt,dir1/dir1.txt,dir2/dir2.txt}
+  264  find *a
+  265  find "*a"
+  266  find -name '*a'
+  267  find -name '^a'
+  268  ls
+  269  find -type d "a*"
+  270  find -type d "*a"
+  271  find "*a" -type d
+  272  find "a*" -type d
+  273  find . "8*"
+  274  find . "a*"
+  275  find . "a"
+  276  find . -name  *"a"
+  277  find . -name  "6a"
+  278  find . -name  "^a"
+  279  find . -name  "a*"
+  280  find . -name  "a*" -type d
+  281  find . "a*" -type d
+  282  find . -name "*[1.txt,2.txt}"
+  283  find . -name "*[1.txt2.txt}"
+  284  find . -name "*[1.txt2.txt]"
+  285  find . -name "*[1.txt2.txt]" -type f
+  286  find . -name "*[1.txt,2.txt]" -type f
+  287  find . -name "[1.txt,2.txt]" -type f
+  288  find . -name "[1.txt2.txt]" -type f
+  289  find . -name "*[1.txt2.txt]" -type f
+  290  find . -name "*[12.txt]" -type f
+  291  find . -name "*[12].txt" -type f
+  292  mkdir Lab1
+  293  cd Lab1
+  294  touch "cs23b054_[1..10].txt"
+  295  ls
+  296  rm "cs23b054_[1..10].txt"
+  297  ls
+  298  touch '*cs23b054_[1..10].txt'
+  299  ls
+  300  rm '*cs23b054_[1..10].txt'
+  301  ls
+  302  touch 'cs23b054_{1..10}.txt'
+  303  ;s
+  304  ls
+  305  rm 'cs23b054_{1..10}.txt'
+  306  touch cs23b054_{1..10}.txt
+  307  ls
+  308  touch latest.doc
+  309  ls -l
+  310  ls -h
+  311  ls -r
+  312  find "*cs23bo54" | rm {}
+  313  find "*cs23bo54'
+  314  find -name "cs23b054_"
+  315  find -name "cs23b054_"
+  316  find -name "cs23b054_*"
+  317  find -name "cs23b054_*" | rm cs23b054_{1..10}.txt
+  318  ls
+  319  cd ../
+  320  pwd
+  321  mv Downloads/sample_input1.txt Lab1
+  322  cd lab1
+  323  cd Lab1
+  324  ls
+  325  ssh CS23B054@10.21.24.161
+  326  ls
+  327  mkdir lab2
+  328  cat hello world,c
+  329  cat hello world.c
+  330  ls
+  331  cd lab2
+  332  cat hello world.c
+  333  cat helloworld.c
+  334  gcc helloworld.c 
+  335  sudo apt install gcc
+  336  ls
+  337  cd lab2
+  338  ls
+  339  rm helloworld.c
+  340  ls
+  341  sudo spt install gcc
+  342  sudo apt install gcc
+  343  clear
+  344  touch hello.c
+  345  vi hello.c
+  346  vim hello.c
+  347  sudo apt install vim
+  348  ls
+  349  gcc hello.c
+  350  ./hello.c
+  351  gcc hello.c -0 hello.c
+  352  gcc hello.c -o hello.c
+  353  gcc hello.c -o hello1.c
+  354  ./hello1.c
+  355  ls
+  356  gcc Intro.c -o Intro1.c
+  357  ./Intro1.c
+  358  rm Intro1.c
+  359  gcc Intro.c -o Intro1.c
+  360  ./Intro1.c
+  361  rm Intro1.c
+  362  gcc Intro.c -o Intro1.c
+  363  ./Intro1.c
+  364  rm Intro1.c
+  365  gcc Intro.c -o Intro1.c
+  366  ./Intro1.c
+  367  rm Intro1.c
+  368  gcc Intro.c -o Intro1.c
+  369  ./Intro1.c
+  370  rm Intro1.c
+  371  gcc Intro.c -o Intro1.c
+  372  ./Intro1.c
+  373  clear
+  374  ./Intro1.c >>myfirstcpgm.txt
+  375  ls
+  376  cat myfirstcpgm.txt 
+  377  ./Intro1.c >>myfirstcpgm.txt
+  378  grep -w "love" | wc -w
+  379  grep -w "love" myfirstcpgm.txt | wc -w
+  380  grep -c "love" myfirstcpgm.txt | wc -1
+  381  grep -c "love" myfirstcpgm.txt | wc -n
+  382  grep -c "love" myfirstcpgm.txt 
+  383  cat myfirstcpgm.txt 
+  384  clear
+  385  ./Intro1.c >>myfirstcpgm.txt
+  386  cat myfirstcpgm.txt 
+  387  ./Intro1.c >>myfirstcpgm.txt
+  388  cat myfirstcpgm.txt 
+  389  ./Intro1.c >
+  390  ./Intro1.c
+  391  ./Intro1.c >myfirstcpgm.txt 
+  392  cat myfirstcpgm.txt 
+  393  grep -c "love" myfirstcpgm.txt 
+  394  gcc JEE.c -o JEE1.c
+  395  ./JEE1.c
+  396  clear
+  397  ./JEE1.c | grep -w "JEE" 
+  398  ./JEE1.c | grep -w "JEE" | wc -c
+  399  wc --help
+  400  clear
+  401  ./JEE1.c | grep -w "JEE" | wc -m
+  402  ./JEE1.c | grep -w "JEE" 
+  403  ./JEE1.c | grep -w "JEE" | wc -m
+  404  history
+  405  history >mycmdlab2.txt

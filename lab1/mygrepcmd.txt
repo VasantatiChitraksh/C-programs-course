@@ -1,0 +1,26 @@
+   30  grep -w "the" sample_input1.txt
+   31  grep -w "To" sample_input1.txt
+   32  grep -w "*[AB]" sample_input1.txt
+   33  grep -w "^[AB]" sample_input1.txt
+   34  grep -x "*[AB]" sample_input1.txt
+   35  grep -x "[AB]" sample_input1.txt
+   36  grep  "[AB]" sample_input1.txt
+   37  grep  "^[AB]" sample_input1.txt
+   38  grep  "$e" sample_input1.txt
+   39  grep -x "e" sample_input1.txt
+   40  grep -x "^e" sample_input1.txt
+   41  grep -x "*e$" sample_input1.txt
+   42  grep -E 'exy$\'  sample_input1.txt
+   43  grep -E 'exy$/'  sample_input1.txt
+   44  grep -E 'exy$'  sample_input1.txt
+   45  grep -w -n "by" sample_input1.txt
+   46  grep  -n "by" sample_input1.txt
+   47  grep  -v  "^T" sample_input1.txt
+   48  grep -c  "the" sample_input1.txt
+   49  grep -w  "the" sample_input1.txt | wc
+   51  grep -w  "the" sample_input1.txt | wc -w
+   52  grep -v  "u" sample_input1.txt | wc -m
+  104  sed 's/vim/emacs/g' sample_input2.txt | grep -w "emacs"
+  114  grep -w "emacs" | head -n 3
+  115  grep -w "emacs" sample_input2.txt | head -n 3
+  148  history | grep -w "grep" >mygrepcmd.txt
